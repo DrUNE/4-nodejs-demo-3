@@ -2,7 +2,10 @@
   "name": "dashboard-api",
   "version": "1.0.0",
   "description": "API для учебного проекта 4-NodeJS",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "folders": [
+    "dist"
+  ],
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
