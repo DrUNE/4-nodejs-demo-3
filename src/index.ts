@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import express, { type Request, type Response, type NextFunction } from 'express';
 import { userRouter } from 'users'
 

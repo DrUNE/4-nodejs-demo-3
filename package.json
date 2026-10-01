@@ -2,7 +2,9 @@
   "name": "dashboard-api",
   "version": "1.0.0",
   "description": "API для учебного проекта 4-NodeJS",
-  "main": "dist/index.js",
+  "bin": {
+    "api": "./dist/index.js"
+  },
   "folders": [
     "dist"
   ],
@@ -11,7 +13,8 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc && tsc-alias",
     "start": "node dist/index.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "author": "Anton Larichev",
   "license": "ISC",
@@ -24,5 +27,8 @@
     "tsc-alias": "^1.9.5",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
